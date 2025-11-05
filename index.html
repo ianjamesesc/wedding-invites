@@ -7,7 +7,6 @@
     <title>Ian & Czarina</title>
                 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
     <link rel="icon" type="image/x" href="images/favicon.ico">
     <link rel="stylesheet" href="style-25.css">
 
@@ -59,21 +58,21 @@
                         <img src="https://ianandczarina.avenoirfilmproduction.com/images/DIV09617.JPG" alt="Scuba Diving">
                         <div class="card-content">
                             <h3 style="letter-spacing: 1.75px;">Wedding Date</h3>
-                            <p>Our wedding will be on a Sunday.<br><b style="font-size: 1.25rem;">December 28, 2025</b><br>A year-ender wedding indeed!</p>
+                            <p><b class="text-highlight" style="font-size: 1.25rem;">DECEMBER 28, 2025</b><br>That's a Sunday. A year-ender wedding indeed!</p>
                         </div>
                     </div>
                     <div class="experience-card animated-item" style="transition-delay: 0.2s;">
                         <img src="https://ianandczarina.avenoirfilmproduction.com/images/DIV00395.JPG">
                         <div class="card-content">
                             <h3 style="letter-spacing: 1.75px;">Ceremony</h3>
-                            <p><b style="font-size: 1.25rem;">St. Peter Seminary Chapel</b><br>P-6 Ampayon, Butuan City<br>Of course! 😉</p>
+                            <p><b class="text-highlight" style="font-size: 1.25rem;">St. Peter Seminary Chapel</b><br>P-6 Ampayon, Butuan City<br>Of course! ;)</p>
                         </div>
                     </div>
                     <div class="experience-card animated-item" style="transition-delay: 0.4s;">
                         <img src="https://ianandczarina.avenoirfilmproduction.com/images/DIV09740.JPG">
                         <div class="card-content">
                             <h3 style="letter-spacing: 1.75px;">Reception</h3>
-                            <p><b style="font-size: 1.25rem;">Almont Inland Resort</b><br>J.C. Aquino Ave., Butuan City</p>
+                            <p><b class="text-highlight" style="font-size: 1.25rem;">Almont Inland Resort</b><br>J.C. Aquino Ave., Butuan City</p>
                         </div>
                     </div>
                 </div>
@@ -81,13 +80,11 @@
         </section>
 
         <section id="video">
-            <video
-                id="prenup-video"
-                autoplay
-                mute
-                loop
-                class="prenup-video video-js">
-                <source src="./video/prenup/WIV-7Mbps.m3u8" type="application/x-mpegURL">
+            <button class="btn mute-btn" id="muteBtn">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+            <video muted loop autoplay playsinline class="animated-item">
+                <source src="images/WIV-7Mbps.mp4" type="video/mp4">
             </video>
         </section>
 
@@ -98,7 +95,7 @@
                         <img src="https://ianandczarina.avenoirfilmproduction.com/images/attire-icon-1.png">
                     </div>
                     <div class="about-text animated-item">
-                        <h2 class="section-title" style="text-align: left; letter-spacing: 2px;">Attire Inspo</h2>
+                        <h2 class="section-title" style="text-align: left; letter-spacing: 2px;">outfit References</h2>
                         <p>Well for starters, the groom is a videographer so we all know that earth-tone outfits are good to look at the memoirs. Also very easy to find these days.</p>
                         <h3 style="letter-spacing: 1px;">Color Palette</h3>
                         <img src="https://ianandczarina.avenoirfilmproduction.com/images/attire-palette-01.png" >
@@ -113,7 +110,7 @@
                 <div class="contact-grid">
                     <div class="contact-info">
                         <h1 style="letter-spacing: 1.25px;">Your presence is truly the<br>best gift we could ask for</h1>
-                        <p>But if you feel called to give a little something, we’ve put together a small registry with some of our most wished-for items at SM City Butuan.<br><br>Scan the QR on this page or send an email to \<email\> with the Registry No. \<registry-no\> as the subject line for our updated gift list.</p>
+                        <p>But if you feel called to give a little something, we’ve put together a small registry with some of our most wished-for items at SM City Butuan.<br><br>Scan the QR on this page or send an email to <xmp><email></xmp> with the Registry No. <xmp><registry-no></xmp> as the subject line for our updated gift list.</p>
                     </div>
                     <img src="images/gift-registry-qr-code.png" class="qr-code" alt="QR Code">
                 </div>
@@ -125,17 +122,36 @@
                 <h2 class="section-title" style="letter-spacing: 10px;">RSVP</h2>
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h3>WE VALUE YOUR TIME</h3>
-                        <p>We fully understand if you can't make it to our big day. But if you can and we hope that you can, please confirm through proceeding with the RSVP.</p>
-                        <p><strong>Email:</strong> <a href="mailto:ianjamesesc@gmail.com" style="text-decoration: none;">ianjamesesc@gmail.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:fortunczar@gmail.com" style="text-decoration: none;">fortunczar@gmail.com</a></p>
-                        <p><strong>Phone:</strong> +639171358400&nbsp;&nbsp;|&nbsp;&nbsp;+639171341710</p>
-                        <div class="social-icons">
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        </div>
+                        <h1>We know your time is valuable,<br>and we appreciate you spending it with us.</h1>
+                        <p>We fully understand if you can't make it on our big day. But if you can and we hope that you could, please confirm through proceeding with the RSVP.</p>
+                        <br>
+                        <p>Contact Us</p>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <p><a href="mailto:ianjamesesc@gmail.com" style="text-decoration: none;">ianjamesesc@gmail.com</a>
+                                        +639171358400
+                                        <div class="social-icons">
+                                            <a href="https://facebook.com/ianjesc" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://instagram.com/ianjesc" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p><a href="mailto:fortunczar@gmail.com" style="text-decoration: none;">fortunczar@gmail.com</a>
+                                        +639171341710
+                                        <div class="social-icons">
+                                            <a href="https://facebook.com/czarina.18" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://instagram.com/czarfortun" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        
                     </div>
-                    <a href="https://forms.gle/Nr6EbH2oscvsrWT26" target="_blank">
-                        <button type="button" class="btn">PROCEED TO RSVP</button>
+                    <a href="https://forms.gle/Nr6EbH2oscvsrWT26" target="_blank" class="rsvp-link">
+                        <button type="button" class="btn">PROCEED TO RSVP&nbsp;&nbsp;&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></button>
                     </a>
                 </div>
             </div>
@@ -143,11 +159,15 @@
     </main>
 
     <footer class="footer">
-        <div class="container"><small>This wedding invitation website was developed and self-hosted by Ian.</small></div>
+       
+        <div class="container">
+            <small>
+                &copy; 2025 Ian & Czarina. All rights reserved.<br>Proudly developed by the groom himself.
+            </small>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
-    <script src="videojs-contrib-hls.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

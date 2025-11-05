@@ -96,7 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
   //   lastScrollY = window.scrollY;
   // });
 
-  var player = videojs("prenup-video");
-  //player.play();
+  document.getElementById("muteBtn").addEventListener("click", function () {
+    const video = document.querySelector("#video video");
+    if (video.muted) {
+      video.muted = false;
+      this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    } else {
+      video.muted = true;
+      this.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    }
+  });
 
 });
