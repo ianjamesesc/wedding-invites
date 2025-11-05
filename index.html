@@ -7,6 +7,7 @@
     <title>Ian & Czarina</title>
                 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
     <link rel="icon" type="image/x" href="images/favicon.ico">
     <link rel="stylesheet" href="style-24.css">
 
@@ -80,8 +81,13 @@
         </section>
 
         <section id="video">
-            <video autoplay loop muted class="wedding-video animated-item">
-                <source src="images/WIV-7Mbps.mp4" type="video/mp4">
+            <video
+                id="prenup-video"
+                autoplay="autoplay"
+                loop
+                class="prenup-video animated-item video-js"
+                preload="auto">
+                <source src="video/prenup/WIV-7Mbps.m3u8" type="application/x-mpegURL">
             </video>
         </section>
 
@@ -107,7 +113,7 @@
                 <div class="contact-grid">
                     <div class="contact-info">
                         <h1 style="letter-spacing: 1.25px;">Your presence is truly the<br>best gift we could ask for</h1>
-                        <p>But if you feel called to give a little something, we’ve put together a small registry with some of our most wished-for items at Sining Spaces.<br><br>Scan the QR on this page or send an email to hello@reallygreatsite.com with the Registry No. 12345 as the subject line for our updated gift list.</p>
+                        <p>But if you feel called to give a little something, we’ve put together a small registry with some of our most wished-for items at SM City Butuan.<br><br>Scan the QR on this page or send an email to \<email\> with the Registry No. \<registry-no\> as the subject line for our updated gift list.</p>
                     </div>
                     <img src="images/gift-registry-qr-code.png" class="qr-code" alt="QR Code">
                 </div>
@@ -139,7 +145,16 @@
     <footer class="footer">
         <div class="container"><small>This wedding invitation website was developed and self-hosted by Ian.</small></div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.prenup-video').play()
+        })
+        
+    </script>
 </body>
 </html>
 

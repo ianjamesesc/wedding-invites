@@ -81,7 +81,7 @@ section {
   background-color: #0d0e13;
 }
 
-#video video{
+#video .prenup-video{
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -473,7 +473,7 @@ section {
   border: 1px solid var(--accent-color);
   aspect-ratio: 1/1;
   object-fit: cover;
-  height: 512px;
+  width: 512px;
 }
 
 #rsvp{

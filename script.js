@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const animateCounter = (counter) => {
     const target = +counter.getAttribute("data-target");
-    const speed = 200; // Lower number = faster animation
+    const speed = 150; // Lower number = faster animation
     const updateCount = () => {
       const count = +counter.innerText;
       const inc = target / speed;
