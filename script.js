@@ -95,4 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   //   lastScrollY = window.scrollY;
   // });
+
+  var player = videojs("prenup-video");
+  //player.play();
+
 });
