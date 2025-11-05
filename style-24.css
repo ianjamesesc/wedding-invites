@@ -8,7 +8,8 @@
   --accent-color: #aa865e;
   --text-color: #c5c6c7;
   --card-bg: #332b1f;
-  --heading-font: 'Chermoni', sans-serif;;
+  --heading-font: 'Chermoni', sans-serif;
+  ;
   --body-font: 'Montserrat', sans-serif;
 }
 
@@ -102,6 +103,7 @@ section {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.1;
 }
+
 .hero-content .tagline {
   font-size: 1.2rem;
   margin: 1.5rem 0 2.5rem;
@@ -124,7 +126,7 @@ section {
   background-color: var(--accent-color);
   color: var(--primary-color);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
 .rsvp-btn {
@@ -144,7 +146,7 @@ section {
   border: 2px solid var(--accent-color);
   color: var(--primary-color);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
 .section-title {
@@ -159,17 +161,20 @@ section {
   max-height: 800px;
   position: relative;
 }
+
 .full-width-slider {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
+
 .slider-track {
   display: flex;
   height: 100%;
   transition: transform 0.6s ease-in-out;
 }
+
 .destination-slide {
   flex: 0 0 100vw;
   height: 100%;
@@ -181,6 +186,7 @@ section {
   justify-content: center;
   text-align: center;
 }
+
 .destination-slide::before {
   content: "";
   position: absolute;
@@ -190,6 +196,7 @@ section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .slide-content {
   position: relative;
   z-index: 2;
@@ -197,9 +204,11 @@ section {
   max-width: 800px;
   padding: 2rem;
 }
+
 .slide-content h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
+
 .slide-content p {
   font-size: 1.1rem;
 }
@@ -214,6 +223,7 @@ section {
   justify-content: space-between;
   z-index: 3;
 }
+
 .slider-nav button {
   background-color: rgba(0, 0, 0, 0.5);
   border: var(--accent-color);
@@ -225,6 +235,7 @@ section {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .slider-nav button:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
@@ -233,11 +244,13 @@ section {
 #experiences {
   background-color: #0d0e13;
 }
+
 .experiences-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
+
 .experience-card {
   background: var(--card-bg);
   border-radius: 10px;
@@ -246,23 +259,28 @@ section {
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .experience-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
+
 .experience-card img {
   height: 220px;
   object-fit: cover;
 }
+
 .experience-card .card-content {
   padding: 1.5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
+
 .experience-card h3 {
   font-size: 1.5rem;
 }
+
 .price-details {
   padding-top: 1rem;
   margin-top: auto;
@@ -271,11 +289,13 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 .price {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--secondary-color);
 }
+
 .price span {
   font-size: 0.9rem;
   font-weight: 300;
@@ -287,36 +307,57 @@ section {
   gap: 3rem;
   align-items: center;
 }
+
 .about-image {
   transition-delay: 0.2s;
 }
+
 .about-text h3 {
   color: var(--accent-color);
 }
+
 @media (max-width: 768px) {
   #about .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  #home {
+    background-position: -775px 0px;
+  }
+
+  .destination-slide:nth-child(1) {
+    background-position: top 0px left -330px;
+  }
+
+  .destination-slide:nth-child(2) {
+    background-position: 70% 0%;
+  }
+
+  .destination-slide:nth-child(3) {
+    background-position: 89% 0%;
   }
 }
 
 #impact {
   background: linear-gradient(rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.9)),
-    url("https://ianandczarina.avenoirfilmproduction.com/images/DIV00146.JPG")
-      no-repeat center center/cover;
+    url("https://ianandczarina.avenoirfilmproduction.com/images/DIV00146.JPG") no-repeat center center/cover;
   background-attachment: fixed;
   padding: 4rem 0;
 }
+
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   text-align: center;
 }
+
 .impact-item h3 {
   font-size: 3rem;
   color: var(--accent-color);
   font-family: var(--body-font);
 }
+
 .impact-item p {
   font-size: 1.1rem;
   color: var(--secondary-color);
@@ -328,28 +369,35 @@ section {
   gap: 3rem;
   align-items: center;
 }
+
 .contact-info p {
   font-size: 1.1rem;
 }
+
 .contact-info .social-icons {
   margin-top: 2rem;
 }
+
 .contact-info .social-icons a {
   font-size: 1.8rem;
   margin-right: 1.5rem;
   color: var(--text-color);
 }
+
 .contact-info .social-icons a:hover {
   color: var(--accent-color);
 }
+
 .contact-form .form-group {
   margin-bottom: 1.5rem;
 }
+
 .contact-form label {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--secondary-color);
 }
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -361,17 +409,20 @@ section {
   color: var(--secondary-color);
   font-family: var(--body-font);
 }
+
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
+
 .gender-options {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
 .gender-options label {
   margin-bottom: 0;
 }
@@ -396,16 +447,20 @@ section {
     transition: right 0.5s ease-in-out;
     box-shadow: -10px 0px 30px -15px #000;
   }
+
   .nav-links.active {
     right: 0;
   }
+
   .nav-links li {
     margin: 2rem 0;
   }
+
   .menu-toggle {
     display: block;
     z-index: 1001;
   }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
