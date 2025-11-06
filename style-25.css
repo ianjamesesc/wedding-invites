@@ -523,7 +523,9 @@ section {
     text-align: center;
   }
 
-  
+  .qr-code{
+    width: 100%;
+  }
 }
 
 .rsvp-link{
