@@ -472,6 +472,7 @@ section {
 
 #rsvp{
   background-color: #0d0e13;
+  /* padding-bottom: 20px !important; */
 }
 
 @media (max-width: 768px) {
