@@ -535,6 +535,10 @@ section {
   .qr-code{
     width: 100%;
   }
+
+  #home .emblem {
+    width: 10rem;
+  }
 }
 
 .rsvp-link{
