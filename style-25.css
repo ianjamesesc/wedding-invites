@@ -129,6 +129,7 @@ section {
 .hero-content h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.1;
+  letter-spacing: 3px;
 }
 
 .hero-content .tagline {
@@ -509,6 +510,10 @@ section {
 
   #home .tagline {
     font-size: .95rem;
+  }
+
+  .hero-content h1 {
+    letter-spacing: .5px;
   }
 
   .destination-slide:nth-child(1) {
