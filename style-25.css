@@ -394,12 +394,18 @@ section {
   align-items: center;
 }
 
+.contact-details{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contact-info p {
   font-size: 1.1rem;
 }
 
 .contact-info .social-icons {
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .contact-info .social-icons a {
@@ -538,6 +544,11 @@ section {
 
   #home .emblem {
     width: 10rem;
+  }
+
+  .contact-details{
+    width: 100%;
+    grid-template-columns: auto;
   }
 }
 
