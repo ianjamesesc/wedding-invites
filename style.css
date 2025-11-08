@@ -394,6 +394,10 @@ section {
   align-items: center;
 }
 
+.entourage-grid p{
+  margin-bottom: 0.1rem !important;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
