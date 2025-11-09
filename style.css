@@ -486,7 +486,14 @@ section {
   /* padding-bottom: 20px !important; */
 }
 
+.entourage-title{
+  letter-spacing: 2px;
+}
+
 @media (max-width: 768px) {
+  .entourage-title{
+    letter-spacing: 1.2px;
+  }
   .nav-links {
     position: fixed;
     top: 0;
