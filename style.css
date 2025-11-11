@@ -106,7 +106,12 @@ section {
   transform: translateY(0);
 }
 
-
+/* #entourage {
+  background-image: url("https://ianandczarina.avenoirfilmproduction.com/images/DIV09119.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
 
 #home {
   min-height: 100vh;
