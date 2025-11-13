@@ -162,6 +162,25 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
+.btn-light {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
 .rsvp-btn {
   display: inline-block;
   padding: 0.8rem 2.5rem;
