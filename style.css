@@ -143,7 +143,19 @@ section {
   color: var(--secondary-color);
 }
 
-.btn {
+.btn:disabled{
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: transparent;
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:not(:disabled) {
   display: inline-block;
   padding: 0.8rem 2.5rem;
   background-color: transparent;
@@ -155,7 +167,7 @@ section {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
   background-color: var(--accent-color);
   color: var(--primary-color);
   transform: translateY(-3px);
@@ -600,8 +612,8 @@ section {
 }
 
 .rsvp-link{
-    text-align: center;
-  }
+  text-align: center;
+}
 
 #muteBtn{
   color: var(--secondary-color);
