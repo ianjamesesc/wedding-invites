@@ -254,7 +254,7 @@
             var duedate = "2025-12-15"
             $(`.rsvp-link`).on(`click`, function(){
                 if(new Date().getTime() > new Date(duedate).getTime()){
-                    alert("RSVP has now been closed. Contact the groom for more info.")
+                    alert("RSVP has now been closed. Contact the couple for more info.")
                 }else{
                     window.open("https://docs.google.com/forms/d/e/1FAIpQLSc6uULKunWwwNXWXzI_aeUG6m56v4JS8uGooCgnErbgWToJcQ/viewform?usp=header")
                 }
